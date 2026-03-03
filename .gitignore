@@ -1,0 +1,65 @@
+# =============================================================================
+# Multichain Block Explorer — .gitignore
+# =============================================================================
+
+# --- Environment / Secrets (NEVER commit these) ---
+.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+envName/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+
+# --- Node / Vite ---
+server/frontend/node_modules/
+server/frontend/dist/
+server/frontend/.vite/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Docker ---
+*.log
+
+## --- Bitcoin ---
+bitcoin-30.2/
+
+## --- Ethereum ---
+jwt.hex
+
+# --- Wallet files (contain encrypted keys — keep out of version control) ---
+# Uncomment the line below if you do NOT want to commit wallet files
+*.wallet
+
+# --- Utils ---
+project_dump.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
